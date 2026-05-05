@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Dipayan 🎉</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            text-align: center;
+            color: #333;
+        }
+        h1 {
+            color: #fff;
+            margin-top: 20px;
+        }
+        .box {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+        img {
+            width: 250px;
+            border-radius: 10px;
+        }
+        video {
+            width: 300px;
+            border-radius: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🎂 Happy Birthday Dipayan Chatterjee 🎂</h1>
+<p>Click the boxes below 💫</p>
+
+<!-- Message Box -->
+<div class="box" onclick="toggle('msg')">
+    💌 Click for a special message
+    <p id="msg" class="hidden">
+        Happy Birthday Dipayan ❤️  
+        You make life brighter and happier.  
+        Hope your day is full of smiles, love, and cake! 🎉
+    </p>
+</div>
+
+<!-- Image Section -->
+<div class="box" onclick="toggle('photo')">
+    📸 Click to see memories
+    <div id="photo" class="hidden">
+        <img src="C:\Users\user\Downloads\Telegram Desktop\20241209_165547.jpg" alt="Memory 1">
+        <img src="C:\Users\user\Downloads\Telegram Desktop\IMG_20250404_223137_408.jpg" alt="Memory 2">
+    </div>
+</div>
+
+<!-- Video Section -->
+<div class="box" onclick="toggle('vid')">
+    🎥 Click to watch something special
+    <div id="vid" class="hidden">
+        <video controls>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </div>
+</div>
+
+<!-- Surprise -->
+<div class="box" onclick="alert('You are the best gift in my life 💙')">
+    🎁 Click for a surprise
+</div>
+
+<script>
+    function toggle(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "none" || element.classList.contains("hidden")) {
+            element.style.display = "block";
+            element.classList.remove("hidden");
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
